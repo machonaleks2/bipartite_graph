@@ -1,0 +1,107 @@
+\doxysection{Bipartite\+Check Struct Reference}
+\hypertarget{struct_bipartite_check}{}\label{struct_bipartite_check}\index{BipartiteCheck@{BipartiteCheck}}
+
+
+Struktura \doxylink{struct_bipartite_check}{Bipartite\+Check} sprawdzająca dwudzielność grafu.  
+
+
+
+
+{\ttfamily \#include $<$bipartite.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_bipartite_check_a2cc49acf3ab05906f9af0bc0b110b84f}{check\+\_\+bipartiteness}} (const \mbox{\hyperlink{struct_graph}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em Sprawdza dwudzielność grafu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_bipartite_check_a35f69042ea50b6134c4e2f6df97ecb6a}{write\+\_\+results\+\_\+to\+\_\+file}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Zapisuje wyniki do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_bipartite_check_a045de0491af8a0f8e79233922a403178}{group1}}
+\begin{DoxyCompactList}\small\item\em Wierzchołki należące do pierwszej grupy. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_bipartite_check_ae876ba05586f256fb5386cf4ced89fcd}{group2}}
+\begin{DoxyCompactList}\small\item\em Wierzchołki należące do drugiej grupy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_bipartite_check_a77ef2b7ff38915362c4cd910b699930c}{is\+\_\+bipartite}}
+\begin{DoxyCompactList}\small\item\em Flaga wskazująca, czy graf jest dwudzielny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura \doxylink{struct_bipartite_check}{Bipartite\+Check} sprawdzająca dwudzielność grafu. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_bipartite_check_a2cc49acf3ab05906f9af0bc0b110b84f}\index{BipartiteCheck@{BipartiteCheck}!check\_bipartiteness@{check\_bipartiteness}}
+\index{check\_bipartiteness@{check\_bipartiteness}!BipartiteCheck@{BipartiteCheck}}
+\doxysubsubsection{\texorpdfstring{check\_bipartiteness()}{check\_bipartiteness()}}
+{\footnotesize\ttfamily \label{struct_bipartite_check_a2cc49acf3ab05906f9af0bc0b110b84f} 
+void Bipartite\+Check\+::check\+\_\+bipartiteness (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_graph}{Graph}} \&}]{graph}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza dwudzielność grafu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & Graf reprezentowany za pomocą listy sąsiedztwa. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_bipartite_check_a35f69042ea50b6134c4e2f6df97ecb6a}\index{BipartiteCheck@{BipartiteCheck}!write\_results\_to\_file@{write\_results\_to\_file}}
+\index{write\_results\_to\_file@{write\_results\_to\_file}!BipartiteCheck@{BipartiteCheck}}
+\doxysubsubsection{\texorpdfstring{write\_results\_to\_file()}{write\_results\_to\_file()}}
+{\footnotesize\ttfamily \label{struct_bipartite_check_a35f69042ea50b6134c4e2f6df97ecb6a} 
+void Bipartite\+Check\+::write\+\_\+results\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Zapisuje wyniki do pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Ścieżka do pliku wyjściowego. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & Jeśli plik nie może zostać otwarty. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_bipartite_check_a045de0491af8a0f8e79233922a403178}\index{BipartiteCheck@{BipartiteCheck}!group1@{group1}}
+\index{group1@{group1}!BipartiteCheck@{BipartiteCheck}}
+\doxysubsubsection{\texorpdfstring{group1}{group1}}
+{\footnotesize\ttfamily \label{struct_bipartite_check_a045de0491af8a0f8e79233922a403178} 
+std\+::vector$<$int$>$ Bipartite\+Check\+::group1}
+
+
+
+Wierzchołki należące do pierwszej grupy. 
+
+\Hypertarget{struct_bipartite_check_ae876ba05586f256fb5386cf4ced89fcd}\index{BipartiteCheck@{BipartiteCheck}!group2@{group2}}
+\index{group2@{group2}!BipartiteCheck@{BipartiteCheck}}
+\doxysubsubsection{\texorpdfstring{group2}{group2}}
+{\footnotesize\ttfamily \label{struct_bipartite_check_ae876ba05586f256fb5386cf4ced89fcd} 
+std\+::vector$<$int$>$ Bipartite\+Check\+::group2}
+
+
+
+Wierzchołki należące do drugiej grupy. 
+
+\Hypertarget{struct_bipartite_check_a77ef2b7ff38915362c4cd910b699930c}\index{BipartiteCheck@{BipartiteCheck}!is\_bipartite@{is\_bipartite}}
+\index{is\_bipartite@{is\_bipartite}!BipartiteCheck@{BipartiteCheck}}
+\doxysubsubsection{\texorpdfstring{is\_bipartite}{is\_bipartite}}
+{\footnotesize\ttfamily \label{struct_bipartite_check_a77ef2b7ff38915362c4cd910b699930c} 
+bool Bipartite\+Check\+::is\+\_\+bipartite}
+
+
+
+Flaga wskazująca, czy graf jest dwudzielny. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bipartite/\mbox{\hyperlink{bipartite_8h}{bipartite.\+h}}\item 
+bipartite/\mbox{\hyperlink{bipartite_8cpp}{bipartite.\+cpp}}\end{DoxyCompactItemize}

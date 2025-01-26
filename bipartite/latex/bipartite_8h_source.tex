@@ -1,0 +1,27 @@
+\doxysection{bipartite.\+h}
+\hypertarget{bipartite_8h_source}{}\label{bipartite_8h_source}\index{bipartite/bipartite.h@{bipartite/bipartite.h}}
+\mbox{\hyperlink{bipartite_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_graph}{Graph}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ std::map<int,\ std::vector<int>>\ \mbox{\hyperlink{struct_graph_ab32a70460d1adb628fdb805399809eda}{adjacency\_list}};\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_graph_a186b99353a690750b5558980b540c46f}{parse\_from\_file}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_bipartite_check}{BipartiteCheck}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{struct_bipartite_check_a045de0491af8a0f8e79233922a403178}{group1}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{struct_bipartite_check_ae876ba05586f256fb5386cf4ced89fcd}{group2}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_bipartite_check_a77ef2b7ff38915362c4cd910b699930c}{is\_bipartite}};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_bipartite_check_a2cc49acf3ab05906f9af0bc0b110b84f}{check\_bipartiteness}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_graph}{Graph}}\&\ graph);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_bipartite_check_a35f69042ea50b6134c4e2f6df97ecb6a}{write\_results\_to\_file}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}

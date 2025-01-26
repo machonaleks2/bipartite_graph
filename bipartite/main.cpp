@@ -1,7 +1,8 @@
-#include "bipartite.h"
+﻿#include "bipartite.h"
 #include "cli.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 
 
 void print_help() {
@@ -38,7 +39,14 @@ bool parse_arguments(int argc, char* argv[], CLI& cli) {
     }
     return help_requested;
 }
-
+/**
+ * @brief Główna funkcja programu obsługująca argumenty wiersza poleceń,
+ * parsowanie grafu, sprawdzanie dwudzielności oraz zapis wyników.
+ *
+ * @param argc Liczba argumentów.
+ * @param argv Tablica argumentów.
+ * @return Kod zakończenia programu (0 w przypadku sukcesu, 1 w przypadku błędu).
+ */
 int main(int argc, char* argv[]) {
     CLI cli;
     cli.input_file, cli.output_file;
@@ -66,6 +74,13 @@ int main(int argc, char* argv[]) {
         std::cout << "Enter the input file with graph edges: ";
         std::getline(std::cin, cli.input_file);
     }
+    // Check if the input file exists
+    std::ifstream infile(cli.input_file);
+    if (!infile) {
+        std::cerr << "Error: Unable to open file: " << cli.input_file << "\n";
+        return 1;
+    }
+    infile.close();
 
     if (cli.output_file.empty()) {
         std::cout << "Enter the output file for results: ";
@@ -73,10 +88,13 @@ int main(int argc, char* argv[]) {
     }
 
     try {
+        Graph graph;
         // Parse the graph, check bipartiteness, and write results
-        auto graph = parse_graph(cli.input_file);
-        auto result = is_bipartite(graph);
-        write_output(cli.output_file, result);
+        graph.parse_from_file(cli.input_file);
+
+        BipartiteCheck check;
+        check.check_bipartiteness(graph);
+        check.write_results_to_file(cli.output_file);
         std::cout << "Results written to " << cli.output_file << "\n";
     }
     catch (const std::exception& e) {

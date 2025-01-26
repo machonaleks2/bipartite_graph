@@ -1,34 +1,44 @@
-#pragma once
-
+﻿#pragma once
 
 #include <map>
 #include <vector>
 #include <string>
 
 /**
- * @brief Parses the input file and constructs the graph.
- *
- * @param filename Input file containing graph edges.
- * @return Adjacency list representation of the graph.
- * @throws std::runtime_error if the file cannot be read or is malformed.
+ * @brief Struktura Graph reprezentująca graf za pomocą listy sąsiedztwa.
  */
-std::map<int, std::vector<int>> parse_graph(const std::string& filename);
+struct Graph {
+    std::map<int, std::vector<int>> adjacency_list; ///< Lista sąsiedztwa grafu.
+
+    /**
+     * @brief Parsuje graf z pliku.
+     *
+     * @param filename Ścieżka do pliku wejściowego zawierającego krawędzie grafu.
+     * @throws std::runtime_error Jeśli plik nie może zostać otwarty.
+     */
+    void parse_from_file(const std::string& filename);
+};
 
 /**
- * @brief Checks if the given graph is bipartite.
- *
- * @param graph Adjacency list representation of the graph.
- * @return A pair containing a boolean indicating bipartiteness and the two sets of nodes.
- *         If the graph is not bipartite, the sets will be empty.
+ * @brief Struktura BipartiteCheck sprawdzająca dwudzielność grafu.
  */
-std::pair<bool, std::pair<std::vector<int>, std::vector<int>>> is_bipartite(const std::map<int, std::vector<int>>& graph);
+struct BipartiteCheck {
+    std::vector<int> group1; ///< Wierzchołki należące do pierwszej grupy.
+    std::vector<int> group2; ///< Wierzchołki należące do drugiej grupy.
+    bool is_bipartite; ///< Flaga wskazująca, czy graf jest dwudzielny.
 
-/**
- * @brief Writes the output to the specified file.
- *
- * @param filename Output file name.
- * @param result Pair containing bipartiteness status and node groups.
- */
-void write_output(const std::string& filename, const std::pair<bool, std::pair<std::vector<int>, std::vector<int>>>& result);
+    /**
+     * @brief Sprawdza dwudzielność grafu.
+     *
+     * @param graph Graf reprezentowany za pomocą listy sąsiedztwa.
+     */
+    void check_bipartiteness(const Graph& graph);
 
-
+    /**
+     * @brief Zapisuje wyniki do pliku.
+     *
+     * @param filename Ścieżka do pliku wyjściowego.
+     * @throws std::runtime_error Jeśli plik nie może zostać otwarty.
+     */
+    void write_results_to_file(const std::string& filename);
+};

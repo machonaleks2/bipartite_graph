@@ -1,0 +1,66 @@
+\doxysection{Graph Struct Reference}
+\hypertarget{struct_graph}{}\label{struct_graph}\index{Graph@{Graph}}
+
+
+Struktura \doxylink{struct_graph}{Graph} reprezentująca graf za pomocą listy sąsiedztwa.  
+
+
+
+
+{\ttfamily \#include $<$bipartite.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_graph_a186b99353a690750b5558980b540c46f}{parse\+\_\+from\+\_\+file}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Parsuje graf z pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ int, std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{struct_graph_ab32a70460d1adb628fdb805399809eda}{adjacency\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em Lista sąsiedztwa grafu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura \doxylink{struct_graph}{Graph} reprezentująca graf za pomocą listy sąsiedztwa. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_graph_a186b99353a690750b5558980b540c46f}\index{Graph@{Graph}!parse\_from\_file@{parse\_from\_file}}
+\index{parse\_from\_file@{parse\_from\_file}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{parse\_from\_file()}{parse\_from\_file()}}
+{\footnotesize\ttfamily \label{struct_graph_a186b99353a690750b5558980b540c46f} 
+void Graph\+::parse\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Parsuje graf z pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Ścieżka do pliku wejściowego zawierającego krawędzie grafu. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & Jeśli plik nie może zostać otwarty. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_graph_ab32a70460d1adb628fdb805399809eda}\index{Graph@{Graph}!adjacency\_list@{adjacency\_list}}
+\index{adjacency\_list@{adjacency\_list}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{adjacency\_list}{adjacency\_list}}
+{\footnotesize\ttfamily \label{struct_graph_ab32a70460d1adb628fdb805399809eda} 
+std\+::map$<$int, std\+::vector$<$int$>$ $>$ Graph\+::adjacency\+\_\+list}
+
+
+
+Lista sąsiedztwa grafu. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bipartite/\mbox{\hyperlink{bipartite_8h}{bipartite.\+h}}\item 
+bipartite/\mbox{\hyperlink{bipartite_8cpp}{bipartite.\+cpp}}\end{DoxyCompactItemize}

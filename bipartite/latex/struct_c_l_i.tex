@@ -1,0 +1,88 @@
+\doxysection{CLI Struct Reference}
+\hypertarget{struct_c_l_i}{}\label{struct_c_l_i}\index{CLI@{CLI}}
+
+
+Struktura \doxylink{struct_c_l_i}{CLI} obsługująca argumenty wiersza poleceń.  
+
+
+
+
+{\ttfamily \#include $<$cli.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_c_l_i_a1727695a3d091be2341103fbee915bcb}{parse\+\_\+arguments}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Parsuje argumenty wiersza poleceń. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_c_l_i_a15c9741fee614f96d8154964f9cde327}{prompt\+\_\+for\+\_\+missing\+\_\+inputs}} ()
+\begin{DoxyCompactList}\small\item\em Interaktywnie wprowadza brakujące dane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_c_l_i_a1ae08e921cb4280d57a7a3824f447dc0}{input\+\_\+file}}
+\begin{DoxyCompactList}\small\item\em Ścieżka do pliku wejściowego. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{struct_c_l_i_ada22d12ee7d594dc44431c2d60e675eb}{output\+\_\+file}}
+\begin{DoxyCompactList}\small\item\em Ścieżka do pliku wyjściowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura \doxylink{struct_c_l_i}{CLI} obsługująca argumenty wiersza poleceń. 
+
+Przechowuje ścieżki do plików wejściowego i wyjściowego oraz zapewnia metody do parsowania argumentów i interaktywnego wprowadzania brakujących danych. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_c_l_i_a1727695a3d091be2341103fbee915bcb}\index{CLI@{CLI}!parse\_arguments@{parse\_arguments}}
+\index{parse\_arguments@{parse\_arguments}!CLI@{CLI}}
+\doxysubsubsection{\texorpdfstring{parse\_arguments()}{parse\_arguments()}}
+{\footnotesize\ttfamily \label{struct_c_l_i_a1727695a3d091be2341103fbee915bcb} 
+void CLI\+::parse\+\_\+arguments (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Parsuje argumenty wiersza poleceń. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Liczba argumentów. \\
+\hline
+{\em argv} & Tablica argumentów. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_c_l_i_a15c9741fee614f96d8154964f9cde327}\index{CLI@{CLI}!prompt\_for\_missing\_inputs@{prompt\_for\_missing\_inputs}}
+\index{prompt\_for\_missing\_inputs@{prompt\_for\_missing\_inputs}!CLI@{CLI}}
+\doxysubsubsection{\texorpdfstring{prompt\_for\_missing\_inputs()}{prompt\_for\_missing\_inputs()}}
+{\footnotesize\ttfamily \label{struct_c_l_i_a15c9741fee614f96d8154964f9cde327} 
+void CLI\+::prompt\+\_\+for\+\_\+missing\+\_\+inputs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Interaktywnie wprowadza brakujące dane. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_c_l_i_a1ae08e921cb4280d57a7a3824f447dc0}\index{CLI@{CLI}!input\_file@{input\_file}}
+\index{input\_file@{input\_file}!CLI@{CLI}}
+\doxysubsubsection{\texorpdfstring{input\_file}{input\_file}}
+{\footnotesize\ttfamily \label{struct_c_l_i_a1ae08e921cb4280d57a7a3824f447dc0} 
+std\+::string CLI\+::input\+\_\+file}
+
+
+
+Ścieżka do pliku wejściowego. 
+
+\Hypertarget{struct_c_l_i_ada22d12ee7d594dc44431c2d60e675eb}\index{CLI@{CLI}!output\_file@{output\_file}}
+\index{output\_file@{output\_file}!CLI@{CLI}}
+\doxysubsubsection{\texorpdfstring{output\_file}{output\_file}}
+{\footnotesize\ttfamily \label{struct_c_l_i_ada22d12ee7d594dc44431c2d60e675eb} 
+std\+::string CLI\+::output\+\_\+file}
+
+
+
+Ścieżka do pliku wyjściowego. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bipartite/\mbox{\hyperlink{cli_8h}{cli.\+h}}\end{DoxyCompactItemize}

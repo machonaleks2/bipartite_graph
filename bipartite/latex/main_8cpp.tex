@@ -1,0 +1,51 @@
+\doxysection{bipartite/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{bipartite/main.cpp@{bipartite/main.cpp}}
+{\ttfamily \#include "{}bipartite.\+h"{}}\newline
+{\ttfamily \#include "{}cli.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a853216ac51aa181669ff4d3de74058a7}{print\+\_\+help}} ()
+\item 
+bool \mbox{\hyperlink{main_8cpp_a14730338a60f6e08d7050f578a2f1a8b}{parse\+\_\+arguments}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_c_l_i}{CLI}} \&cli)
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Główna funkcja programu obsługująca argumenty wiersza poleceń, parsowanie grafu, sprawdzanie dwudzielności oraz zapis wyników. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Główna funkcja programu obsługująca argumenty wiersza poleceń, parsowanie grafu, sprawdzanie dwudzielności oraz zapis wyników. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Liczba argumentów. \\
+\hline
+{\em argv} & Tablica argumentów. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Kod zakończenia programu (0 w przypadku sukcesu, 1 w przypadku błędu). 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a14730338a60f6e08d7050f578a2f1a8b}\index{main.cpp@{main.cpp}!parse\_arguments@{parse\_arguments}}
+\index{parse\_arguments@{parse\_arguments}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{parse\_arguments()}{parse\_arguments()}}
+{\footnotesize\ttfamily \label{main_8cpp_a14730338a60f6e08d7050f578a2f1a8b} 
+bool parse\+\_\+arguments (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}, }\item[{\mbox{\hyperlink{struct_c_l_i}{CLI}} \&}]{cli}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a853216ac51aa181669ff4d3de74058a7}\index{main.cpp@{main.cpp}!print\_help@{print\_help}}
+\index{print\_help@{print\_help}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_help()}{print\_help()}}
+{\footnotesize\ttfamily \label{main_8cpp_a853216ac51aa181669ff4d3de74058a7} 
+void print\+\_\+help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
