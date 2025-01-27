@@ -16,11 +16,11 @@ Program:
 ## Jak Używać
 1. **Kompilacja**:
    ```bash
-   g++ main.cpp bipartite.cpp -o bipartite_checker
+   g++ main.cpp bipartite.cpp -o bipartite
    ```
 2. **Uruchamianie**:
    ```bash
-   ./bipartite_checker -i input.txt -o output.txt
+   ./bipartite.exe -i input.txt -o output.txt
    ```
    - `-i`: Ścieżka do pliku wejściowego.
    - `-o`: Ścieżka do pliku wyjściowego.
