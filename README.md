@@ -20,12 +20,12 @@ Program:
    ```
 2. **Uruchamianie**:
    ```bash
-   ./bipartite.exe -i input.txt -o output.txt
+   ./bipartite.exe -i graph.txt -o output.txt
    ```
    - `-i`: Ścieżka do pliku wejściowego.
    - `-o`: Ścieżka do pliku wyjściowego.
 
-3. **Przykład Pliku Wejściowego (`input.txt`)**:
+3. **Przykład Pliku Wejściowego (`graph.txt`)**:
    ```
    1 2
    2 3
