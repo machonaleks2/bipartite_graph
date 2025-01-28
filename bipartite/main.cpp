@@ -58,7 +58,6 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    // Parse command-line arguments
     for (int i = 1; i < argc; ++i) {
         std::string arg = argv[i];
         if (arg == "-i" && i + 1 < argc) {
@@ -69,12 +68,11 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    // Prompt user for input interactively if not provided
     if (cli.input_file.empty()) {
         std::cout << "Enter the input file with graph edges: ";
         std::getline(std::cin, cli.input_file);
     }
-    // Check if the input file exists
+
     std::ifstream infile(cli.input_file);
     if (!infile) {
         std::cerr << "Error: Unable to open file: " << cli.input_file << "\n";
@@ -89,7 +87,6 @@ int main(int argc, char* argv[]) {
 
     try {
         Graph graph;
-        // Parse the graph, check bipartiteness, and write results
         graph.parse_from_file(cli.input_file);
 
         BipartiteCheck check;

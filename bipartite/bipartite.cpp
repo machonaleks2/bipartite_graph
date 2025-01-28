@@ -50,6 +50,7 @@ void BipartiteCheck::check_bipartiteness(const Graph& graph) {
 
             for (int neighbor : graph.adjacency_list.at(current)) {
                 if (colors[neighbor] == -1) {
+                    // Przypisz kolor przeciwny
                     colors[neighbor] = 1 - colors[current];
                     if (colors[neighbor] == 0) {
                         group1.push_back(neighbor);
@@ -60,6 +61,7 @@ void BipartiteCheck::check_bipartiteness(const Graph& graph) {
                     queue.push(neighbor);
                 }
                 else if (colors[neighbor] == colors[current]) {
+                    // Konflikt kolorów, graf nie jest dwudzielny
                     is_bipartite = false;
                     return;
                 }

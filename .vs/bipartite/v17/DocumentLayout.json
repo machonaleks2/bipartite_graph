@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|solutionrelative:bipartite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\bipartite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|solutionrelative:bipartite\\bipartite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|solutionrelative:bipartite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88C169FA-5528-429A-ADFA-CA3855EAFE21}|bipartite\\bipartite.vcxproj|C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\bipartite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "bipartite\\cli.h",
               "ToolTip": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\cli.h",
               "RelativeToolTip": "bipartite\\cli.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-21T08:13:36.852Z",
               "IsPinned": true,
@@ -44,13 +44,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "bipartite.cpp",
               "DocumentMoniker": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\bipartite.cpp",
               "RelativeDocumentMoniker": "bipartite\\bipartite.cpp",
               "ToolTip": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\bipartite.cpp",
               "RelativeToolTip": "bipartite\\bipartite.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-26T13:05:15.014Z",
               "EditorCaption": ""
@@ -63,20 +63,20 @@
               "RelativeDocumentMoniker": "bipartite\\bipartite.h",
               "ToolTip": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\bipartite.h",
               "RelativeToolTip": "bipartite\\bipartite.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-26T12:37:14.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\main.cpp",
               "RelativeDocumentMoniker": "bipartite\\main.cpp",
               "ToolTip": "C:\\Users\\macho\\Desktop\\Github\\bipartite_graph\\bipartite\\main.cpp",
               "RelativeToolTip": "bipartite\\main.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADEAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-21T07:58:06.158Z",
               "EditorCaption": ""
